@@ -14,13 +14,12 @@
     "MaxPlayers": 64,
     "MinPlayers": 1,
     "GameNetworkType": "Multiplayer",
-    "MapSelect": "Unrestricted",
-    "MapList": [
-      "facepunch.flatgrass"
-    ],
+    "MapSelect": "Empty",
+    "MapList": [],
     "RankType": "None",
     "PerMapRanking": false,
     "LeaderboardType": "None",
-    "ProjectTemplate": null
+    "ProjectTemplate": null,
+    "GameCategory": "None"
   }
 }

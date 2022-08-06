@@ -1,0 +1,13 @@
+:intro //start of UI
+{
+    pointer-events: all;
+}
+
+background{
+    background-color: rgb(13, 17, 23);
+    color: white;
+    font-family: poppins;
+    z-index: 200;
+    pointer-events: all;
+    width: 100%;
+}
