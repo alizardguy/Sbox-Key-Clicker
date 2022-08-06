@@ -15,5 +15,6 @@ public partial class MainUI : HudEntity<RootPanel>
 		RootPanel.AddChild<VoiceList>();
 		RootPanel.AddChild<VoiceSpeaker>();
 		RootPanel.AddChild<Background>();
+		RootPanel.AddChild<MainClicky>();
 	}
 }
