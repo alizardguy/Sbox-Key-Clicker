@@ -17,6 +17,9 @@ public class MainGame : Panel
         var center = Add.Panel("center");
         {
             var leimage = center.Add.Image("/assets/keyart.png", "leimage");
+            leimage.AddEventListener("onClick", (e) => {
+            Log.Info("clicked");
+        });
         }
 
         var right = Add.Panel("right");
@@ -27,6 +30,5 @@ public class MainGame : Panel
 
 	public override void Tick()//game loop
 	{
-		
 	}
 }
