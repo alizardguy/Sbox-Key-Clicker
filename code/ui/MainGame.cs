@@ -2,9 +2,9 @@ using Sandbox;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
 
-public class Background : Panel
+public class MainGame : Panel
 {
-    public Background()
+    public MainGame()
     {
         StyleSheet.Load("/ui/MainUI.scss");
 
