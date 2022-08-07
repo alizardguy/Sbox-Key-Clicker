@@ -11,11 +11,15 @@ public class MainGame : Panel
 
         var left = Add.Panel("left");
         {
-               
+            var currentKeys = left.Add.Label("currentKeys", "AmountDisplay");
+            {
+                currentKeys.Text = "0 keys";
+            }       
         }
 
         var center = Add.Panel("center");
         {
+
             var leimage = center.Add.Image("/assets/keyart.png", "leimage");
             leimage.AddEventListener("onClick", (e) => {
             Log.Info("clicked");
