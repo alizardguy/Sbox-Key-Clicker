@@ -6,11 +6,6 @@ public class MainClicky : Panel
 {
     public MainClicky()
     {
-        StyleSheet.Load("/ui/MainUI.scss");
-
-        var center = Add.Panel("center");
-        {
-            Button btn = center.Add.Button("btn");          
-        }
+        
     }    
 }
