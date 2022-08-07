@@ -7,7 +7,14 @@ background{
     background-color: rgb(13, 17, 23);
     color: white;
     font-family: poppins;
-    z-index: 200;
+    z-index: -2;
     pointer-events: all;
     width: 100%;
+}
+
+mainClicky{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(22, 82, 170);
+    z-index: -1;
 }
