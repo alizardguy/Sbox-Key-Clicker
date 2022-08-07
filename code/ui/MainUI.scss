@@ -7,7 +7,40 @@ MainGame{
     background-color: rgb(13, 17, 23);
     color: white;
     font-family: poppins;
-    z-index: -2;
+    z-index: -9;
     pointer-events: all;
     width: 100%;
+}
+
+#flex {
+    display: flex;
+    flex-direction: column;
+}
+
+//collums
+.left{
+    width: 30%;
+    order: 1;
+}
+
+.center{
+    width: 40%;
+    order: 2;
+}
+
+.right{
+    width: 30%;
+    order: 3;
+}
+
+//main clicky
+.leimage{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    position: relative;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20%;
+    margin-bottom: 30%;
 }
