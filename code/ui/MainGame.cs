@@ -23,5 +23,10 @@ public class MainGame : Panel
         {
                
         }
-    }    
+    }
+
+	public override void Tick()//game loop
+	{
+		
+	}
 }
