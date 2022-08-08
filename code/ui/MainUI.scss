@@ -24,7 +24,7 @@ MainGame{
 }
 
 .center{
-    width: 40%;
+    width: 50%;
     order: 2;
 }
 
@@ -35,17 +35,15 @@ MainGame{
 
 //main clicky
 .leimage{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 35%;
-    margin-bottom: 30%;
+    margin: 10%;
+    width: 100%;
+    height: 60%;
 }
 
+//left area
+
 .AmountDisplay{
-    font: poppins;
+    font-family: poppins;
     font-size: 50px;
     margin-left: 5%;
     margin-top: 5%;
