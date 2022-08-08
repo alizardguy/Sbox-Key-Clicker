@@ -39,7 +39,11 @@ public partial class MyGame : Sandbox.Game
 	public override void ClientJoined( Client client )
 	{
 		base.ClientJoined( client );
+	}
 
-		
+	//generic commands
+	[ConCmd.Client("hellozard")]
+	public static void helloZard(){
+		Log.Info($"Hello {Local.Client.Name}");
 	}
 }
