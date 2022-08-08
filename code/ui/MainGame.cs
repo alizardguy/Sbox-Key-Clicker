@@ -8,6 +8,7 @@ public class MainGame : Panel
     {
         StyleSheet.Load("/ui/MainUI.scss");
 
+        int clicks = 0;
 
         var left = Add.Panel("left");
         {
@@ -22,11 +23,11 @@ public class MainGame : Panel
 
             var mainclicky = center.Add.Image("/assets/keyart.png", "theKey");
             mainclicky.AddEventListener("onMouseDown", (e) => {
-                Log.Info("clicked");
+                clicks++;
+                Log.Info(clicks + " clicks");
                 mainclicky.SetTexture("/assets/keyartsmall.png");
             });
             mainclicky.AddEventListener("onMouseUp",(e) => {
-                Log.Info("mouse up");
                 mainclicky.SetTexture("/assets/keyart.png");
             });
         }

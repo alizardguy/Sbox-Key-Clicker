@@ -35,15 +35,16 @@ MainGame{
 
 //main clicky
 .theKey{
-    margin: 10%;
+    position: absolute;
+    height: 90%;
     width: 100%;
-    height: 60%;
+    align-self: center;
 }
 
 //left area
-
 .AmountDisplay{
     font-family: poppins;
+    font-weight: bolder;
     font-size: 50px;
     margin-left: 5%;
     margin-top: 5%;
