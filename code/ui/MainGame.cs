@@ -20,10 +20,15 @@ public class MainGame : Panel
         var center = Add.Panel("center");
         {
 
-            var leimage = center.Add.Image("/assets/keyart.png", "leimage");
-            leimage.AddEventListener("onClick", (e) => {
-            Log.Info("clicked");
-        });
+            var mainclicky = center.Add.Image("/assets/keyart.png", "theKey");
+            mainclicky.AddEventListener("onMouseDown", (e) => {
+                Log.Info("clicked");
+                mainclicky.SetTexture("/assets/keyartsmall.png");
+            });
+            mainclicky.AddEventListener("onMouseUp",(e) => {
+                Log.Info("mouse up");
+                mainclicky.SetTexture("/assets/keyart.png");
+            });
         }
 
         var right = Add.Panel("right");
