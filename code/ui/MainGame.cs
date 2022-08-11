@@ -4,15 +4,15 @@ using Sandbox.UI.Construct;
 
 public class MainGame : Panel
 {
+    Label currentKeys;
+    int _clicks = 0;
     public MainGame()
     {
         StyleSheet.Load("/ui/MainUI.scss");
 
-        int clicks = 0;
-
         var left = Add.Panel("left");
         {
-            var currentKeys = left.Add.Label("currentKeys", "AmountDisplay");
+            currentKeys = left.Add.Label("currentKeys", "AmountDisplay");
             {
                 currentKeys.Text = "0 keys";
             }       
@@ -23,8 +23,8 @@ public class MainGame : Panel
 
             var mainclicky = center.Add.Image("/assets/keyart.png", "theKey");
             mainclicky.AddEventListener("onMouseDown", (e) => {
-                clicks++;
-                Log.Info(clicks + " clicks");
+                _clicks++;
+                Log.Info(_clicks + " clicks");
                 mainclicky.SetTexture("/assets/keyartsmall.png");
             });
             mainclicky.AddEventListener("onMouseUp",(e) => {
@@ -40,5 +40,6 @@ public class MainGame : Panel
 
 	public override void Tick()//game loop
 	{
+        currentKeys.Text = _clicks + " keys";
 	}
 }
